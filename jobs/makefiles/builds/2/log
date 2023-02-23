@@ -1,0 +1,84 @@
+Started by user [8mha:////4DaBFamhvqcZAbalvFKz53UP274aH6PYhGJXhZQcaLhgAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL99MTSkozEXADRP3v6wgAAAA==[0mgautham
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/makefiles
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/makefiles/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/GauthamBappalige/buildtools.git # timeout=10
+Fetching upstream changes from https://github.com/GauthamBappalige/buildtools.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/GauthamBappalige/buildtools.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/mycfiles^{commit} # timeout=10
+Checking out Revision 13de253f3b29639614ec57f794c834f2b12cb79f (refs/remotes/origin/mycfiles)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 13de253f3b29639614ec57f794c834f2b12cb79f # timeout=10
+Commit message: "Create newfile"
+ > git rev-list --no-walk 13de253f3b29639614ec57f794c834f2b12cb79f # timeout=10
+[makefiles] $ /bin/sh -xe /tmp/jenkins11109735838798419956.sh
++ cd /var/lib/jenkins/workspace/makefiles
++ make
+gcc -c main.c
+main.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 | main()  {
+      | ^~~~
+main.c: In function ‘main’:
+main.c:3:4: warning: implicit declaration of function ‘big2’ [-Wimplicit-function-declaration]
+    3 |    big2() ;
+      |    ^~~~
+main.c:4:4: warning: implicit declaration of function ‘fact’ [-Wimplicit-function-declaration]
+    4 |    fact() ;
+      |    ^~~~
+main.c:5:4: warning: implicit declaration of function ‘rev’ [-Wimplicit-function-declaration]
+    5 |    rev() ;
+      |    ^~~
+main.c:6:4: warning: implicit declaration of function ‘pal’ [-Wimplicit-function-declaration]
+    6 |    pal() ;
+      |    ^~~
+main.c:7:4: warning: implicit declaration of function ‘big3’ [-Wimplicit-function-declaration]
+    7 |    big3() ;
+      |    ^~~~
+main.c:8:4: warning: implicit declaration of function ‘fib’ [-Wimplicit-function-declaration]
+    8 |    fib() ;
+      |    ^~~
+main.c:9:4: warning: implicit declaration of function ‘sum’ [-Wimplicit-function-declaration]
+    9 |    sum() ;
+      |    ^~~
+main.c:10:4: warning: implicit declaration of function ‘sort’ [-Wimplicit-function-declaration]
+   10 |    sort() ;
+      |    ^~~~
+gcc -c big2.c
+big2.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 | big2()
+      | ^~~~
+gcc -c fact.c
+fact.c:2:2: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 |  fact() {
+      |  ^~~~
+gcc -c rev.c
+rev.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 | rev()
+      | ^~~
+gcc -c pal.c
+pal.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    3 | pal() {
+      | ^~~
+gcc -c big3.c
+big3.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    3 | big3() {
+      | ^~~~
+gcc -c fib.c
+fib.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    3 | fib() {
+      | ^~~
+gcc -c sum.c
+sum.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    3 | sum() {
+      | ^~~
+gcc -c sort.c
+sort.c:5:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    5 | sort() {
+      | ^~~~
+gcc -o gau.exe main.o big2.o fact.o rev.o pal.o big3.o fib.o sum.o sort.o
+Finished: SUCCESS
