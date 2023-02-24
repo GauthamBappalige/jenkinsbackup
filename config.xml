@@ -1,21 +1,60 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <hudson>
-  <disabledAdministrativeMonitors/>
+  <disabledAdministrativeMonitors>
+    <string>jenkins.diagnostics.ControllerExecutorsAgents</string>
+  </disabledAdministrativeMonitors>
   <version>2.392</version>
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
-  <authorizationStrategy class="hudson.security.FullControlOnceLoggedInAuthorizationStrategy">
-    <denyAnonymousReadAccess>true</denyAnonymousReadAccess>
+  <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.Create:gautham</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.Delete:gautham</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:gautham</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.Update:gautham</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.View:abc</permission>
+    <permission>USER:com.cloudbees.plugins.credentials.CredentialsProvider.View:gautham</permission>
+    <permission>USER:hudson.model.Computer.Build:abc</permission>
+    <permission>USER:hudson.model.Computer.Build:gautham</permission>
+    <permission>USER:hudson.model.Computer.Configure:gautham</permission>
+    <permission>USER:hudson.model.Computer.Connect:gautham</permission>
+    <permission>USER:hudson.model.Computer.Create:gautham</permission>
+    <permission>USER:hudson.model.Computer.Delete:gautham</permission>
+    <permission>USER:hudson.model.Computer.Disconnect:gautham</permission>
+    <permission>USER:hudson.model.Hudson.Administer:gautham</permission>
+    <permission>USER:hudson.model.Hudson.Read:abc</permission>
+    <permission>USER:hudson.model.Hudson.Read:gautham</permission>
+    <permission>USER:hudson.model.Item.Build:gautham</permission>
+    <permission>USER:hudson.model.Item.Cancel:gautham</permission>
+    <permission>USER:hudson.model.Item.Configure:gautham</permission>
+    <permission>USER:hudson.model.Item.Create:gautham</permission>
+    <permission>USER:hudson.model.Item.Delete:abc</permission>
+    <permission>USER:hudson.model.Item.Delete:gautham</permission>
+    <permission>USER:hudson.model.Item.Discover:gautham</permission>
+    <permission>USER:hudson.model.Item.Move:gautham</permission>
+    <permission>USER:hudson.model.Item.Read:abc</permission>
+    <permission>USER:hudson.model.Item.Read:gautham</permission>
+    <permission>USER:hudson.model.Item.Workspace:gautham</permission>
+    <permission>USER:hudson.model.Run.Delete:gautham</permission>
+    <permission>USER:hudson.model.Run.Replay:gautham</permission>
+    <permission>USER:hudson.model.Run.Update:gautham</permission>
+    <permission>USER:hudson.model.View.Configure:gautham</permission>
+    <permission>USER:hudson.model.View.Create:gautham</permission>
+    <permission>USER:hudson.model.View.Delete:abc</permission>
+    <permission>USER:hudson.model.View.Delete:gautham</permission>
+    <permission>USER:hudson.model.View.Read:abc</permission>
+    <permission>USER:hudson.model.View.Read:gautham</permission>
+    <permission>USER:hudson.scm.SCM.Tag:gautham</permission>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
-    <disableSignup>true</disableSignup>
+    <disableSignup>false</disableSignup>
     <enableCaptcha>false</enableCaptcha>
   </securityRealm>
   <disableRememberMe>false</disableRememberMe>
   <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
   <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULL_NAME}</workspaceDir>
   <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
   <jdks>
     <jdk>
       <name>oraclejdk8</name>
@@ -42,7 +81,21 @@
   <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
     <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
   </crumbIssuer>
-  <nodeProperties/>
+  <nodeProperties>
+    <hudson.slaves.EnvironmentVariablesNodeProperty>
+      <envVars serialization="custom">
+        <unserializable-parents/>
+        <tree-map>
+          <default>
+            <comparator class="java.lang.String$CaseInsensitiveComparator"/>
+          </default>
+          <int>1</int>
+          <string>MAVEN_OPTS</string>
+          <string></string>
+        </tree-map>
+      </envVars>
+    </hudson.slaves.EnvironmentVariablesNodeProperty>
+  </nodeProperties>
   <globalNodeProperties/>
   <nodeRenameMigrationNeeded>false</nodeRenameMigrationNeeded>
 </hudson>

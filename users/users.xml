@@ -3,8 +3,32 @@
   <version>1</version>
   <idToDirectoryNameMap class="concurrent-hash-map">
     <entry>
+      <string>abc</string>
+      <string>abc_887446314394224452</string>
+    </entry>
+    <entry>
+      <string>noreply</string>
+      <string>noreply_16435532720497777993</string>
+    </entry>
+    <entry>
       <string>gautham</string>
       <string>gautham_10220231474614573999</string>
+    </entry>
+    <entry>
+      <string>xyz</string>
+      <string>xyz_6715817016944225533</string>
+    </entry>
+    <entry>
+      <string>stranger</string>
+      <string>stranger_6190113723063058080</string>
+    </entry>
+    <entry>
+      <string>gau</string>
+      <string>gau_14703433350876670610</string>
+    </entry>
+    <entry>
+      <string>ajay</string>
+      <string>ajay_3545323521663821245</string>
     </entry>
   </idToDirectoryNameMap>
 </hudson.model.UserIdMapper>

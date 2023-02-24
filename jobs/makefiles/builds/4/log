@@ -1,0 +1,24 @@
+Started by user [8mha:////4DaBFamhvqcZAbalvFKz53UP274aH6PYhGJXhZQcaLhgAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL99MTSkozEXADRP3v6wgAAAA==[0mgautham
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/makefiles
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/makefiles/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/GauthamBappalige/buildtools.git # timeout=10
+Fetching upstream changes from https://github.com/GauthamBappalige/buildtools.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/GauthamBappalige/buildtools.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/mycfiles^{commit} # timeout=10
+Checking out Revision 13de253f3b29639614ec57f794c834f2b12cb79f (refs/remotes/origin/mycfiles)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 13de253f3b29639614ec57f794c834f2b12cb79f # timeout=10
+Commit message: "Create newfile"
+ > git rev-list --no-walk 13de253f3b29639614ec57f794c834f2b12cb79f # timeout=10
+[makefiles] $ /bin/sh -xe /tmp/jenkins13017063047804525051.sh
++ cd /var/lib/jenkins/workspace/makefiles
++ make
+make: 'gau.exe' is up to date.
+Archiving artifacts
+Finished: SUCCESS

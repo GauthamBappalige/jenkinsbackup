@@ -1,0 +1,12 @@
+Started on Feb 24, 2023, 6:22:00 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision 157ee76ce127d16ae7e5b4d811b08f3df9871a37 (refs/remotes/origin/master)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git ls-remote -h -- https://github.com/efsavage/hello-world-war.git # timeout=10
+Found 1 remote heads on https://github.com/efsavage/hello-world-war.git
+[poll] Latest remote head revision on refs/heads/master is: 157ee76ce127d16ae7e5b4d811b08f3df9871a37 - already built by 5
+Done. Took 0.18 sec
+No changes

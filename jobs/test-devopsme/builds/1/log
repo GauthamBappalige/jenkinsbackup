@@ -1,0 +1,12 @@
+Started by user [8mha:////4DaBFamhvqcZAbalvFKz53UP274aH6PYhGJXhZQcaLhgAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL99MTSkozEXADRP3v6wgAAAA==[0mgautham
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/test-devopsme
+[test-devopsme] $ /bin/sh -xe /tmp/jenkins14523323337948012316.sh
++ pwd
+/var/lib/jenkins/workspace/test-devopsme
++ who
+ubuntu   pts/0        2023-02-23 07:50 (103.197.115.44)
+ubuntu   pts/1        2023-02-23 08:27 (103.197.115.44)
++ ls -ltr
+total 0
+Finished: SUCCESS
